@@ -1,33 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding-bottom: 6vw;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+* {
+  font-family: Verdana, Geneva;
+}
+
+main {
+  background-color: white;
+}
+
+.bluebox {
+  background: radial-gradient(
+    at top left,
+    rgba(255, 0, 0, 0),
+    rgb(229, 248, 253),
+    rgb(220, 246, 253),
+    rgb(239, 238, 251)
+  );
+
+  height: fit-content;
+  width: 60%;
+  padding: 10vw;
+}
+
+.logo {
+  height: 7vw;
+  width: 7vw;
+}
+
+.form {
+  height: fit-content;
+  width: 34vw;
+  margin: 15vw 0 0 -15vw;
+  padding: 3vw;
+}
+
+.wrapper {
+  gap: 4vw;
+}
+
+.mbox {
+  gap: 2vw;
+}
+
+.measure {
+  width: 9vw;
+}
+.results {
+  background: linear-gradient(to left, #5985fc, #245eff, #245eff);
+  padding: 1.5vw;
+  /*border-radius: 1vw 10vw 10vw 1vw;*/
+}
+
+.pic {
+  background: linear-gradient(
+    white 20%,
+    rgb(232, 250, 255) 21%,
+    rgb(232, 250, 255) 100%
+  );
 }
