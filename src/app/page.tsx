@@ -193,7 +193,7 @@ export default function Home() {
         </fieldset>
       </form>
 
-      {/*picture of person eating  and a box of text*/}
+      {/*picture of person eating  and a box of veggies*/}
 
       <div className="flex mt-[50vw] ml-[-70vw] gap-36">
         <div className=" h-[30.5vw] pic  w-[35vw]">
@@ -303,6 +303,7 @@ export default function Home() {
       {/* OTHER LIMITATIONS*/}
 
       <div className=" mt-[136vw] ml-[-99.8vw] w-[100%] flex justify-end gap-14 pr-14">
+        <div className=" w-[10vw] h-[10vw] rounded-bl-full border-l-black border-l-2 mr-20 mt-[-2vw]"></div>
         <div className=" w-[24vw] h-fit shadow-xl p-7 rounded-3xl">
           <h2 className=" font-semibold flex gap-2">
             <Image
